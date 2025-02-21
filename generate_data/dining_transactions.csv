@@ -1,0 +1,5 @@
+transaction_id,passenger_id,item,amount,timestamp
+T001,P001,Seafood Platter,45.99,2024-02-20 19:30:00
+T002,P002,Vegetarian Pasta,28.5,2024-02-20 20:15:00
+T004,P004,Steak,52.99,2024-02-20 20:00:00
+T005,P005,Fish Special,38.99,2024-02-20 19:45:00

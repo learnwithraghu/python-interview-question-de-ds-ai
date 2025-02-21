@@ -1,0 +1,122 @@
+[
+  {
+    "timestamp": "2024-02-20 19:00:00",
+    "passenger_id": "P001",
+    "location": "Cabin",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 19:00:00",
+    "passenger_id": "P002",
+    "location": "Cabin",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 19:00:00",
+    "passenger_id": "P004",
+    "location": "Cabin",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 19:00:00",
+    "passenger_id": "P005",
+    "location": "Cabin",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 20:00:00",
+    "passenger_id": "P001",
+    "location": "Dining Hall",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 20:00:00",
+    "passenger_id": "P002",
+    "location": "Dining Hall",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 20:00:00",
+    "passenger_id": "P004",
+    "location": "Dining Hall",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 20:00:00",
+    "passenger_id": "P005",
+    "location": "Dining Hall",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 21:00:00",
+    "passenger_id": "P001",
+    "location": "Dining Hall",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 21:00:00",
+    "passenger_id": "P002",
+    "location": "Dining Hall",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 21:00:00",
+    "passenger_id": "P004",
+    "location": "Dining Hall",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 21:00:00",
+    "passenger_id": "P005",
+    "location": "Dining Hall",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 22:00:00",
+    "passenger_id": "P001",
+    "location": "Cabin",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 22:00:00",
+    "passenger_id": "P002",
+    "location": "Cabin",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 22:00:00",
+    "passenger_id": "P004",
+    "location": "Cabin",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 22:00:00",
+    "passenger_id": "P005",
+    "location": "Cabin",
+    "action": "exit"
+  },
+  {
+    "timestamp": "2024-02-20 23:00:00",
+    "passenger_id": "P001",
+    "location": "Cabin",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 23:00:00",
+    "passenger_id": "P002",
+    "location": "Cabin",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 23:00:00",
+    "passenger_id": "P004",
+    "location": "Cabin",
+    "action": "entry"
+  },
+  {
+    "timestamp": "2024-02-20 23:00:00",
+    "passenger_id": "P005",
+    "location": "Cabin",
+    "action": "entry"
+  }
+]
