@@ -1,3 +1,5 @@
+### Refer InterviewQuestion.md during the interview to know the task
+
 # Data Detective: Cruise Ship Investigation 🚢
 
 Dive into a real-world-inspired scenario: a theft has occurred aboard a luxurious cruise ship, and you’re tasked with cracking the case. Using Python, you’ll analyze a rich dataset including passenger details, card access logs, and dining records to identify the culprit. This hands-on exercise tests your ability to manipulate data, uncover patterns, and draw logical conclusions—skills essential for technical interviews. Imagine yourself as a data detective, sifting through clues like a passenger’s whereabouts or suspicious dining habits, all while leveraging Python’s powerful data-handling capabilities. Perfect for students and job seekers, this challenge offers a practical, story-driven way to prepare for roles requiring analytical prowess and coding expertise. Can you solve the mystery and prove your data analysis chops?
