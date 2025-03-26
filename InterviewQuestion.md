@@ -1,34 +1,47 @@
-# Cruise Ship Investigation Challenge
+### Cruise Ship Investigation Challenge
 
-## Background
-Dive into a real-world-inspired scenario: a theft has occurred aboard a luxurious cruise ship, and you’re tasked with cracking the case. Using Python, you’ll analyze a rich dataset including passenger details, card access logs, and dining records to identify the culprit. This hands-on exercise tests your ability to manipulate data, uncover patterns, and draw logical conclusions—skills essential for technical interviews. Imagine yourself as a data detective, sifting through clues like a passenger’s whereabouts or suspicious dining habits, all while leveraging Python’s powerful data-handling capabilities. Perfect for students and job seekers, this challenge offers a practical, story-driven way to prepare for roles requiring analytical prowess and coding expertise. Can you solve the mystery and prove your data analysis chops?
+#### Background
 
-## Setup
-Clone this repository which contains:
-- passenger_manifest.csv
-- card_access_logs.json
-- dining_transactions.csv
+A high-stakes theft has rocked the luxurious *Ocean Star* cruise ship: a priceless diamond necklace was stolen from the ship's VIP lounge between 8:00 PM and 8:15 PM on March 25, 2025. As a data detective, your mission is to analyze passenger data using Python and pinpoint the culprit. You'll work with three datasets---passenger details, card access logs, and dining records---to uncover clues like suspicious movements, alibi inconsistencies, or unusual behavior. This challenge tests your ability to wrangle data, spot patterns, and draw evidence-based conclusions, mirroring the analytical skills top tech roles demand. Can you crack the case and showcase your coding expertise?
 
-## Investigation Tasks
+#### Setup
 
-### Task 1: Data Loading & Initial Inspection
-**Question**: Load all three datasets and display the first few rows of each. Make sure to handle timestamps appropriately.
+Clone the repository containing:
 
+-   passenger_manifest.csv: Passenger ID, name, cabin number, and VIP status.
+-   card_access_logs.json: Timestamps, passenger ID, location (e.g., VIP lounge, dining hall, deck), and action (entry/exit).
+-   dining_transactions.csv: Timestamps, passenger ID, and transaction details (e.g., food ordered, cost).
 
-### Task 2: Establishing Timeline
-**Question**: Between 7 PM and 9 PM, create a timeline of all passenger movements (entries/exits) and dining transactions. Display this in a clear, chronological format.
+#### Investigation Tasks
 
+**Task 1: Data Loading & Initial Inspection**\
+*Question:* Load all three datasets into Python (using pandas or similar) and display the first 5 rows of each. Ensure timestamps are parsed correctly as datetime objects for accurate time-based analysis.
 
-### Task 3: Identifying Anomalies
-**Question**: Find passengers who were in the dining hall during the incident (8 PM) but didn't make any dining transactions. Also identify any passengers who made dining transactions but have no record of entering the dining hall.
+**Task 2: Establishing the Crime Timeline**\
+*Question:* Focus on the theft window (8:00 PM to 8:15 PM on March 25, 2025). Create a chronological timeline combining:
 
+-   All passenger movements (entries/exits) from the access logs.
+-   All dining transactions.\
+    Display the result in a readable format (e.g., a table sorted by timestamp).
 
-### Task 4: Location Analysis
-**Question**: Cross-reference the passenger manifest with the access logs to identify:
-- Passengers who were in suspicious locations at 8 PM
-- Passengers who made unusual movement patterns (multiple entries/exits)
-Display your findings with supporting evidence.
+**Task 3: Alibi Check -- Dining Hall Discrepancies**\
+*Question:* The dining hall is a potential alibi location, as it's far from the VIP lounge. Investigate:
 
+-   Passengers who were in the dining hall (per access logs) at 8:00 PM but have no dining transactions between 7:00 PM and 9:00 PM---did they fake their presence?
+-   Passengers with dining transactions at 8:00 PM but no record of entering the dining hall---did they tamper with the system?\
+    List these passengers with supporting evidence.
 
-### Task 5: Final Analysis
-**Question**: Based on your findings from tasks 1-4, identify the most suspicious passenger(s) and explain your reasoning. Support your conclusion with data from all three sources.
+**Task 4: Suspicious Movements**\
+*Question:* The VIP lounge is the crime scene. Analyze the access logs and passenger manifest to find:
+
+-   Passengers who entered the VIP lounge between 7:45 PM and 8:15 PM (suspicious proximity to the theft).
+-   Passengers with unusual movement patterns between 7:00 PM and 9:00 PM (e.g., multiple entries/exits to the VIP lounge or rapid location changes).\
+    Present your findings with timestamps and locations as evidence.
+
+**Task 5: Final Suspect Identification**\
+*Question:* Using insights from Tasks 1-4, identify the most likely suspect(s) for the theft. Consider:
+
+-   Presence in or near the VIP lounge during the theft window.
+-   Inconsistent alibis (e.g., dining hall discrepancies).
+-   Unusual behavior (e.g., erratic movements or VIP status).\
+    Explain your reasoning, backing it with specific data from all three datasets (e.g., "Passenger X entered the VIP lounge at 8:02 PM, has no dining alibi, and made three rapid location switches").
