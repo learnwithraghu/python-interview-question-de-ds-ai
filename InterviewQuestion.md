@@ -2,7 +2,7 @@
 
 #### Background
 
-A priceless diamond necklace was stolen from the Cabin of the *Ocean Star* cruise ship between 8:00 PM and 8:15 PM on March 25, 2025. You're a data detective tasked with finding the thief using Python. You'll analyze three datasets---passenger details, access logs, and dining records---to track movements and spot suspicious behavior. This challenge sharpens your data analysis skills, perfect for tech interviews. Ready to solve the mystery?
+A priceless diamond necklace was stolen from the Cabin of the *Ocean Star* cruise ship between 8:00 PM and 8:15 PM on March 25, 2024. You're a data detective tasked with finding the thief using Python. You'll analyze three datasets---passenger details, access logs, and dining records---to track movements and spot suspicious behavior. This challenge sharpens your data analysis skills, perfect for tech interviews. Ready to solve the mystery?
 
 #### Setup
 
@@ -19,7 +19,7 @@ Clone the repository containing:
 *Why:* We need to see what we're working with---passenger names, locations, and transactions are our clues. Make sure timestamps load as dates so we can sort them later. (Hint: Use a pandas function to read files and another to check the top rows.)
 
 **Task 2: Build a Timeline Around the Theft**\
-*Question:* Create a timeline of all passenger movements and dining transactions between 7:00 PM and 9:00 PM on March 25, 2025, sorted by time.\
+*Question:* Create a timeline of all passenger movements and dining transactions between 7:00 PM and 9:00 PM on March 25, 2024, sorted by time.\
 *Why:* The theft happened at 8:00 PM, so we need to know where everyone was before, during, and after. This helps us spot who was near the Cabin. (Hint: Filter rows by time and combine datasets, then sort by the timestamp column.)
 
 **Task 3: Check Dining Hall Alibis**\
