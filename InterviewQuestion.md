@@ -2,34 +2,46 @@
 
 #### Background
 
-A priceless diamond necklace was stolen from the Cabin of the *Ocean Star* cruise ship between 8:00 PM and 8:15 PM on March 25, 2024. You're a data detective tasked with finding the thief using Python. You'll analyze three datasets---passenger details, access logs, and dining records---to track movements and spot suspicious behavior. This challenge sharpens your data analysis skills, perfect for tech interviews. Ready to solve the mystery?
+A high-stakes theft has occurred on the luxurious *Ocean Star* cruise ship: a valuable item was stolen from a passenger's cabin between 8:00 PM and 8:15 PM on February 20, 2024. The ship's security team has provided three key datasets to help identify the culprit:
 
-#### Setup
+1. **Passenger Manifest**: Contains passenger information including ID, name, cabin number, dining preferences, age, and nationality.
+2. **Card Access Logs**: Records every time a passenger's keycard is used to enter or exit their cabin and the dining hall, including timestamps and action type.
+3. **Dining Transactions**: Documents all food and beverage purchases made by passengers, including timestamps, items ordered, and payment amounts.
 
-Clone the repository containing:
-
--   passenger_manifest.csv: Passenger ID, name, cabin number, VIP status.
--   card_access_logs.json: Timestamps, passenger ID, location (e.g., Cabin, dining hall), action (entry/exit).
--   dining_transactions.csv: Timestamps, passenger ID, transaction details (e.g., food ordered, cost).
+As a data detective, your mission is to analyze these datasets using Python to identify suspicious patterns, verify alibis, and ultimately pinpoint the thief. This challenge tests your ability to work with real-world data, perform time-based analysis, and draw logical conclusions from multiple data sources.
 
 #### Investigation Tasks
 
-**Task 1: Load and Peek at the Data**\
-*Question:* Load all three datasets into Python and show the first few rows of each.\
-*Why:* We need to see what we're working with---passenger names, locations, and transactions are our clues. Make sure timestamps load as dates so we can sort them later. (Hint: Use a pandas function to read files and another to check the top rows.)
+**Task 1: Data Loading & Initial Inspection**\
+*Question:* Load and examine the three datasets:
+- Load passenger_manifest.csv, card_access_logs.json, and dining_transactions.csv into Python using pandas
+- Display the first 5 rows of each dataset
+- Check for any missing values or data quality issues
+- Ensure all timestamp columns are properly parsed as datetime objects
 
-**Task 2: Build a Timeline Around the Theft**\
-*Question:* Create a timeline of all passenger movements and dining transactions between 7:00 PM and 9:00 PM on March 25, 2024, sorted by time.\
-*Why:* The theft happened at 8:00 PM, so we need to know where everyone was before, during, and after. This helps us spot who was near the Cabin. (Hint: Filter rows by time and combine datasets, then sort by the timestamp column.)
+*Hint:* Pay special attention to the different data formats (CSV and JSON) and timestamp formats in each dataset. The card_access_logs.json file contains nested data that needs to be properly flattened.
 
-**Task 3: Check Dining Hall Alibis**\
-*Question:* Find passengers who were in the dining hall at 8:00 PM but didn't make a dining transaction between 7:00 PM and 9:00 PM.\
-*Why:* The dining hall is far from the Cabin, so being there could be an alibi---unless they were faking it by not eating. This flags suspicious passengers without solid excuses. (Hint: Filter access logs for 8:00 PM, then check against dining records.)
+*Why this task matters:* Understanding the structure and quality of your data is the foundation of any investigation. This step helps identify potential data issues that could affect your analysis and ensures you're working with properly formatted timestamps for accurate timeline reconstruction.
 
-**Task 4: Spot Suspects Near the Crime Scene**\
-*Question:* Identify passengers who entered the Cabin between 7:45 PM and 8:15 PM.\
-*Why:* The theft happened in the Cabin between 8:00 PM and 8:15 PM, so anyone there right before or during is a prime suspect. (Hint: Filter access logs by time and location, then pull their details.)
+**Task 2: Establishing the Crime Timeline**\
+*Question:* Create a comprehensive timeline of events during the theft window (8:00 PM to 8:15 PM) by:
+- Analyzing cabin access patterns from the card access logs
+- Correlating these with dining hall movements
+- Matching with dining transactions
+- Sorting all events chronologically
+- Presenting the results in a clear, readable format
 
-**Task 5: Pick the Thief**\
-*Question:* Based on your findings, name the most suspicious passenger and explain why, using evidence from all datasets.\
-*Why:* This ties everything together---movements, alibis, and passenger info---to catch the thief. We want to see your logic backed by data, like "They were in the Cabin at 8:02 PM with no alibi." (Hint: Combine your results and look for patterns, like VIP status or odd behavior.)
+*Hint:* Consider using pandas' merge operations to combine data from multiple sources. Pay attention to the exact timestamps to ensure accurate sequencing of events. Look for patterns in cabin access and dining hall movements.
+
+*Why this task matters:* A precise timeline helps identify who was where and when during the theft. This chronological view is essential for spotting suspicious movements and verifying alibis, particularly focusing on cabin access patterns during the theft window.
+
+**Task 3: Alibi Verification**\
+*Question:* Investigate potential alibi inconsistencies by analyzing:
+- Passengers who were recorded in the dining hall during the theft window
+- Matching these records with actual dining transactions
+- Identifying any discrepancies between access logs and transaction records
+- Checking if passengers' dining preferences (Early/Late) align with their actual dining times
+
+*Hint:* Look for cases where a passenger's access log shows them in the dining hall but there are no corresponding transactions, or vice versa. Also consider if their dining preferences match their actual behavior.
+
+*Why this task matters:* Alibi verification is crucial in narrowing down suspects. Inconsistencies between where someone claims to be and the actual evidence can reveal potential deception, especially when considering their stated dining preferences versus actual behavior.
